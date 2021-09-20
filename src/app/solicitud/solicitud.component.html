@@ -1,0 +1,148 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center pt-5 mt-5">
+            <img src="/assets/img/SB-FINANCIAL-GRANDE.png" style="height: 95px">
+            <br>
+            <br>
+            <h3 class="pb-3 pt-5">Registra tus credenciales de SAT para diseñar tu propuesta de manera ágil</h3>
+        </div>
+        <div class="col-sm-8 offset-sm-2 mt-5">
+            <ul class="col-sm-6 offset-sm-3 nav nav-pills nav-justified" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="menu1-tab" data-toggle="tab" href="#menu1">CIEC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="menu2-tab" data-toggle="tab" href="#menu2">E. Firma</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-5">
+                <form class="tab-pane container active" id="menu1" role="tabpanel" aria-labelledby="menu1-tab" #ciecForm="ngForm">
+                    <div class="col-sm-8 offset-sm-2">
+                        <div class="form-group">
+                            <b for="pwd">RFC</b>
+                            <input id="ciecRfc" name="ciecRfc" class="form-input" placeholder="Escribe algo" [(ngModel)]="ciecData.rfc" required>
+                            <ng-container *ngIf="submitted && ciecForm.form.controls.ciecRfc.errors">
+                                <div style="color:red" *ngIf="ciecForm.form.controls.ciecRfc.errors.required">Rfc es requerido</div>
+                            </ng-container>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 offset-sm-2">
+                        <div class="form-group">
+                            <b for="pwd">Contraseña</b>
+                            <input id="ciecPass" name="ciecPass" type="password" class="form-input" placeholder="Contraseña" [(ngModel)]="ciecData.password" minlength="8" required>
+                            <ng-container *ngIf="submitted && ciecForm.form.controls.ciecPass.errors">
+                                <div style="color:red" *ngIf="ciecForm.form.controls.ciecPass.errors.required">Contraseña es requerida</div>
+                                <div style="color:red" *ngIf="ciecForm.form.controls.ciecPass.errors.minlength">Contraseña debe ser mayor o igual a 8 caracteres</div>
+                            </ng-container>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 offset-sm-2 text-center">
+                        <small>Tu información está protegida por nuestro sistema de seguridad.</small>
+                    </div>
+                    <div class="col-sm-8 offset-sm-2 my-5 text-center">
+                        <button class="btn-form px-5" (click)="createCertWithCiec(ciecForm)">Enviar</button>
+                    </div>
+                    <div class="col-sm-8 offset-sm-2 mb-5 text-center">
+                        <small class="text-answer" placement="right" ngbPopover="Nos conectamos a SAT para validar tus datos con el objetivo de brindar una solucion ágil, fácil y sencilla"><b>¿Por que te pedimos la contraseña del SAT?</b></small>
+                    </div>
+                </form>
+                <form class="tab-pane container fade" id="menu2" role="tabpanel" aria-labelledby="menu2-tab" #esignForm="ngForm">
+                    <div class="col-sm-12 p-0">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <b for="pwd">Certificado</b>
+                            </div>
+                            <div class="col-sm-12 d-flex p-0">
+                                <div class="col-sm-8">
+                                    <input type="text" id="certText" class="form-input" placeholder="Buscar" (click)="clickFileInput('certFile')" readonly>
+                                    <input type="file" id="certFile" class="form-input" style="display: none !important" (change)="esignData.certificate = changeFileInput('certFile', 'certText', $event)">
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn-form-o px-5" width="100%" (click)="clickFileInput('certFile')">Buscar</button>
+                                </div>
+                            </div>
+                            <ng-container *ngIf="submitted && esignData.certificate.length == 0">
+                                <div class="col-sm-12" style="color:red" *ngIf="esignData.certificate.length == 0">Certificado es requerido</div>
+                            </ng-container>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 p-0">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <b for="pwd">Clave privada</b>
+                            </div>
+                            <div class="col-sm-12 d-flex p-0">
+                                <div class="col-sm-8">
+                                    <input type="text" id="keyText" class="form-input" placeholder="Buscar" (click)="clickFileInput('keyFile')" readonly>
+                                    <input type="file" id="keyFile" class="form-input" style="display: none !important" (change)="esignData.privateKey = changeFileInput('keyFile', 'keyText', $event)">
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn-form-o px-5" width="100%" (click)="clickFileInput('keyFile')">Buscar</button>
+                                </div>
+                            </div>
+                            <ng-container *ngIf="submitted && esignData.privateKey.length == 0">
+                                <div class="col-sm-12" style="color:red" *ngIf="esignData.privateKey.length == 0">Clave privada es requerido</div>
+                            </ng-container>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <b for="pwd">Contraseña</b>
+                            <input type="password" name="esignPass" class="form-input" placeholder="Contraseña" [(ngModel)]="esignData.password" minlength="8" required>
+                            <ng-container *ngIf="submitted && esignForm.form.controls.esignPass.errors">
+                                <div style="color:red" *ngIf="esignForm.form.controls.esignPass.errors.required">Contraseña es requerida</div>
+                                <div style="color:red" *ngIf="esignForm.form.controls.esignPass.errors.minlength">Contraseña debe ser mayor o igual a 8 caracteres</div>
+                            </ng-container>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-8">
+                        <div class="form-group">
+                            <b for="pwd">RFC</b>
+                            <input class="form-input" placeholder="Escribe algo">
+                        </div>
+                    </div> -->
+                    <div class="col-sm-8 text-center">
+                        <small>Tu información está protegida por nuestro sistema de seguridad.</small>
+                    </div>
+                    <div class="col-sm-8 offset-sm-2 my-5 text-center">
+                        <button class="btn-form px-5" (click)="createCertWithEsign(esignForm)">Enviar</button>
+                    </div>
+                    <div class="col-sm-8 offset-sm-2 mb-5 text-center">
+                        <small class="text-answer" placement="right" ngbPopover="Nos conectamos a SAT para validar tus datos con el objetivo de brindar una solucion ágil, fácil y sencilla"><b>¿Por que te pedimos la contraseña del SAT?</b></small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #modalSuccess let-modal>
+        <div class="modal-body text-center">
+            <div class="col-sm-12 p-3">
+                <h3>¡Registro realizado con éxito!</h3>
+                <p class="py-3">Uno de nuestros ascesores se pondrá en contacto contigo lo más antes posible<br>para compartir tu propuesta.</p>
+                <div class="col-sm-6 offset-sm-3">
+                    <button class="btn-form px-5" data-dismiss="modal" (click)="goToHome(modal)">Volver al inicio</button>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+    <ng-template #modalError let-modal>
+        <div class="modal-body text-center">
+            <div class="col-sm-12 p-3">
+                <h3>Error en el registro</h3>
+                <p class="pt-3">Hubo un problema al tratar de completar tu registro. Por favor, intenta reenviar la<br>solicitud o intentalo de nuevo más tarde</p><br>
+                <div style="color: red"><strong>Error: </strong>{{errorText}}</div>
+                <div class="col-sm-12 d-flex p-0 pt-3">
+                    <div class="col-sm-6 text-right">
+                        <button class="btn-form-o px-5" (click)="modal.close();">Cancelar</button>
+                    </div>
+                    <div class="col-sm-6 text-left">
+                        <button class="btn-form px-5" (click)="resendCertCreation(modal, ciecForm, esignForm)">Reenviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+</div>

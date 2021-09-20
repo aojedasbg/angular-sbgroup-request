@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="115px" height="112px" viewBox="0 0 115 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web---E1---V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SB-Logistics" transform="translate(-983.000000, -3994.000000)" stroke="#6AA12A" stroke-width="4">
+            <g id="Group-10" transform="translate(985.000000, 3997.000000)">
+                <polyline id="Path-31" points="77.5841329 19.0207298 44.677981 -2.27373675e-13 2.27373675e-13 26.3708902 2.27373675e-13 80.3310002 44.677981 105.809842 60.3957194 96.241614"></polyline>
+                <path d="M44.677981,0 L44.677981,17.9364295" id="Path-32"></path>
+                <polyline id="Path-33" stroke-linecap="square" stroke-linejoin="round" points="44.677981 105.809842 44.677981 52.9049208 -3.55271368e-15 26.3708902 36.8593487 26.3708902"></polyline>
+                <path d="M8.05471575,66.0903659 L8.05471575,84.4524479" id="Path-34"></path>
+                <path d="M17.6761524,71.6449274 L17.6761524,90.0070094" id="Path-34-Copy"></path>
+                <path d="M44.677981,26.3708902 L109.428089,26.3708902 C112.112174,45.6177496 110.979718,60.7090953 106.030721,71.6449274 C101.081725,82.5807594 91.5995286,90.9446837 77.5841329,96.7367005 C62.6565053,88.7259377 53.1544449,80.3620134 49.0779516,71.6449274 C45.0014583,62.9278414 43.5348014,47.8364956 44.677981,26.3708902 Z" id="Path-35"></path>
+                <polyline id="Path-36" points="66.3921741 53.6449274 74.7728659 61.5537953 92.385103 41.7784698"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="211px" height="237px" viewBox="0 0 211 237" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web---E1---V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SB-Logistics" transform="translate(-342.000000, -7499.000000)" stroke="#FFFFFF" stroke-width="6">
+            <g id="Group-6" transform="translate(345.000000, 7502.000000)">
+                <polygon id="Path-13" points="102.359138 12 16 65.8269166 16 166.124154 102.359138 217 189 166.124154 189 65.8269166"></polygon>
+                <path d="M102,12 L102,217" id="Path-14"></path>
+                <path d="M101.033055,14.3574235 L103.600354,215.414727" id="Path-14" transform="translate(102.316704, 114.886075) rotate(-300.000000) translate(-102.316704, -114.886075) "></path>
+                <path d="M100.989861,14.3568626 L103.643548,215.415288" id="Path-14" transform="translate(102.316704, 114.886075) rotate(-240.000000) translate(-102.316704, -114.886075) "></path>
+                <circle id="Oval" fill="#000000" cx="103" cy="16" r="16"></circle>
+                <circle id="Oval-Copy-31" fill="#000000" cx="103" cy="215" r="16"></circle>
+                <circle id="Oval-Copy-27" fill="#000000" cx="16" cy="66" r="16"></circle>
+                <circle id="Oval-Copy-29" fill="#000000" cx="16" cy="165" r="16"></circle>
+                <circle id="Oval-Copy-32" fill="#000000" cx="103" cy="116" r="16"></circle>
+                <circle id="Oval-Copy-28" fill="#000000" cx="189" cy="66" r="16"></circle>
+                <circle id="Oval-Copy-30" fill="#000000" cx="189" cy="165" r="16"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

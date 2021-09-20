@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="215px" height="240px" viewBox="0 0 215 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web---E1---V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SB-Logistics" transform="translate(-885.000000, -8106.000000)" stroke="#FFFFFF" stroke-width="9">
+            <g id="Group-7" transform="translate(890.000000, 8111.000000)">
+                <path d="M2.80042567,69 L201.745539,69 C216.05513,176.333333 183.176173,230 103.108667,230 C23.0411615,230 -10.394919,176.333333 2.80042567,69 Z" id="Path-15" stroke-linejoin="round"></path>
+                <path d="M153,49.9682578 C153,16.6560859 136.238575,0 102.715725,0 C69.1928758,0 52.9711353,23 54.0505041,69" id="Path-16" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M82,173 L123,173 C118.921252,152.942519 116.269466,139.568973 115.04464,132.879362 C113.410942,123.956617 114.231884,120.926426 112.753567,117.208838 C111.733896,114.644629 110.219439,110 103.614591,110 C98.2575044,110 96.5377402,112.576209 94.9345295,114.389084 C91.6954001,118.051819 92.563433,123.530628 90.2929954,132.879362 C88.6413496,139.680164 85.8770178,153.05371 82,173 Z" id="Path-17"></path>
+                <path d="M134,204 C147.059667,197.022094 156.190751,190.81628 161.393252,185.382558 C166.595752,179.948835 172.464668,170.487983 179,157" id="Path-18" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
